@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* Обнуляющий стиль */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Конец обнуляющих стилей */
+body {
+  font-family: Arial;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.hi {
+  background-color: #445162;
+  padding: 50px;
+}
+.hi__row {
+  display: flex;
+  justify-content: space-between;
+}
+.hi__body {
+  color: #fff;
+  padding: 0 30px 0 0;
+}
+.hi__title {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 60px;
+  margin: 0 0 38px 0;
+}
+.hi__list li {
+  background: url("../img/li.svg") 0 5px no-repeat;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  line-height: 22px;
+  padding: 0 0 0 26px;
+  margin: 0 0 15px 0;
+}
+.hi__list li:last-child {
+  margin: 0;
+}
+.hi__image {
+  margin: 120px 0 0 0;
+}
+
+.title {
+  color: #445162;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.what {
+  padding: 50px 0;
+}
+.what__row {
+  display: flex;
+}
+.what__image {
+  flex: 0 0 430px;
+}
+.what__image img {
+  max-width: 100%;
+}
+.what__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 38px;
+}
+.what__title {
+  margin: 0 0 33px 0;
+}
+.what__text p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 25px 0;
+}
+
+.columns {
+  background-color: #f5f5f5;
+  padding: 50px 0 20px 0;
+}
+.columns__title {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.columns__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.columns__column {
+  padding: 0 8px;
+  flex: 0 1 50%;
+  margin: 0 0 30px 0;
+}
+.item__row {
+  display: flex;
+}
+.item__image {
+  flex: 0 0 200px;
+}
+.item__image img {
+  max-width: 100%;
+}
+.item__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 15px;
+}
+.item__title {
+  color: #445162;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 13px 0;
+}
+.item__text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vertical-cards {
+  padding: 50px 0;
+}
+.vertical-cards__title {
+  color: #445162;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.vertical-cards__body {
+  max-width: 990px;
+  margin: 0 auto;
+}
+.vertical-cards__row {
+  display: flex;
+  margin: 0px -22.5px;
+}
+.vertical-cards__column {
+  padding: 0 22.5px;
+  flex: 0 1 33.333%;
+  display: flex;
+}
+.vertical-cards__column_1 {
+  order: 2;
+}
+.vertical-cards__column_2 {
+  order: 1;
+}
+.vertical-cards__column_3 {
+  order: 3;
+}
+.vertical-cards_item {
+  background-color: #445162;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #445162;
+  display: flex;
+  flex-direction: column;
+}
+.vertical-cards__subtitle {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+.vertical-cards__label {
+  background: #fff;
+  text-align: center;
+  color: #445162;
+  padding: 16px 0;
+  font-size: 40px;
+}
+.vertical-cards__text {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+.vertical-cards__text p {
+  margin: 0 0 15px 0;
+}
+.vertical-cards__text p:last-child {
+  margin: 0;
+}
+.vertical-cards__btn {
+  display: block;
+  margin: 0 20px 10px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+.footer__row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  color: #445162;
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
